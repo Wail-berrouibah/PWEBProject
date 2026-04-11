@@ -1,0 +1,61 @@
+body { background: #0f172a; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+.checkout-wrapper {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 { font-size: 1.1rem; color: #007BFF; margin-bottom: 20px; }
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #0f172a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.05);
+    outline: none;
+}
+
+.row { display: flex; gap: 10px; }
+
+.card-display-area {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    perspective: 800px;
+}
+
+.credit-card-3d {
+    width: 300px;
+    height: 180px;
+    background: linear-gradient(135deg, #334155, #000);
+    border-radius: 15px;
+    transform: rotateY(-25deg) rotateX(15deg);
+    padding: 25px;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.5);
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.chip { width: 40px; height: 30px; background: #94a3b8; border-radius: 5px; margin-bottom: 40px; }
+.card-num { font-family: 'Courier New', monospace; font-size: 1.2rem; margin-bottom: 10px; }
+
+.pay-btn {
+    width: 100%;
+    padding: 18px;
+    background: #007BFF;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+}
